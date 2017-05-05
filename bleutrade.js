@@ -117,7 +117,7 @@ function BleuTradeClient(key, secret, requeue) {
 	};
 
 	self.getcandles = function(market, period, count, lasthours, callback) {
-		api_query('getorderbook', callback, {market: market, period: period, count: count, lasthours: lasthours});
+		api_query('getcandles', callback, {market: market, period: period, count: count, lasthours: lasthours});
 	};
 
 	////////////////////////////////////////////////////////////////////////
